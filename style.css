@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heebo-.container {
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #002147;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    
+}
+
+.option{
+    margin: 50px;
+    width: 250px;
+    height: 70px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    transition: 0s background-color;
+}
+
+#easy:hover {
+    background-color: #1a3106;
+    /* transition-delay:1s; */
+}
+
+#medium:hover {
+    background-color: #66304c;
+    /* transition-delay:1s; */
+}
+
+#hard:hover {
+    background-color: #4B080C;
+    /* transition-delay:1s; */
+}
