@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kępa Zuzanna, 3P">
-    <meta name="description" content="Projekt saper yay!">
-    <meta name="keywords" content="saper">
+    <meta name="description" content="Saper - Wybór poziomu trudności">
+    <meta name="keywords" content="saper, easy, medium, hard">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/img/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
-
-    <title>Saper</title>
+    <title>Saper - Wybierz poziom</title>
 </head>
-
 <body>
     <div class="container">
-        <a href="levels/easy/indexEasy.html" id="easy" class="option">Easy</a>
-        <a href="levels/medium/indexMedium.html" class="option" id="medium" >Medium</a>
-        <a href="levels/hard/indexHard.html" class="option" id="hard" >Hard</a>
+        <h2 class="title">Wybierz poziom trudności</h2>
+        
+        <div class="buttons">
+            <a href="#" class="option" id="easy" onclick="startGame('easy')">Łatwy</a>
+            <a href="#" class="option" id="medium" onclick="startGame('medium')">Średni</a>
+            <a href="#" class="option" id="hard" onclick="startGame('hard')">Trudny</a>
+        </div>
+    
+        <h3 id="flagsCounter" class="hidden">🚩 Pozostałe flagi: 0</h3>
+        <div class="gameBox hidden"></div>
+    
+        <button id="restartBtn" class="hidden" onclick="restartGame()">🔄 Restart</button>
     </div>
+        
 </body>
-
 </html>
